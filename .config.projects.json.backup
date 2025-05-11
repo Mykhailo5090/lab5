@@ -1,0 +1,7 @@
+{
+    "projects": {
+        "Test1": {
+            "credentialSecret": false
+        }
+    }
+}
