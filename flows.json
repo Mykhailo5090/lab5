@@ -1,1 +1,80 @@
-[]
+[
+    {
+        "id": "71b5fe72d5884b46",
+        "type": "tab",
+        "label": "Поток 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9edfc3490d99d013",
+        "type": "function",
+        "z": "71b5fe72d5884b46",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "4424d8cb458d22f4"
+            ]
+        ]
+    },
+    {
+        "id": "4424d8cb458d22f4",
+        "type": "switch",
+        "z": "71b5fe72d5884b46",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "9881e92c6c6d14c7"
+            ]
+        ]
+    },
+    {
+        "id": "9881e92c6c6d14c7",
+        "type": "change",
+        "z": "71b5fe72d5884b46",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    }
+]
