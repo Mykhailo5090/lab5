@@ -23,7 +23,8 @@
         "y": 120,
         "wires": [
             [
-                "4424d8cb458d22f4"
+                "4424d8cb458d22f4",
+                "e936b46af4d092de"
             ]
         ]
     },
@@ -74,7 +75,86 @@
         "x": 610,
         "y": 120,
         "wires": [
+            [
+                "8b06b53cb27b92b5"
+            ]
+        ]
+    },
+    {
+        "id": "8b06b53cb27b92b5",
+        "type": "debug",
+        "z": "71b5fe72d5884b46",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7cdfa874a49a19ba",
+        "type": "inject",
+        "z": "71b5fe72d5884b46",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 200,
+        "wires": [
             []
+        ]
+    },
+    {
+        "id": "cb65dfa647379b7f",
+        "type": "link call",
+        "z": "71b5fe72d5884b46",
+        "name": "",
+        "links": [],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 270,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e936b46af4d092de",
+        "type": "function",
+        "z": "71b5fe72d5884b46",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "9881e92c6c6d14c7"
+            ]
         ]
     }
 ]
