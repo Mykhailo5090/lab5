@@ -153,6 +153,32 @@
         "y": 220,
         "wires": [
             [
+                "9881e92c6c6d14c7",
+                "2d952d669e324544"
+            ]
+        ]
+    },
+    {
+        "id": "2d952d669e324544",
+        "type": "switch",
+        "z": "71b5fe72d5884b46",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
                 "9881e92c6c6d14c7"
             ]
         ]
